@@ -2,9 +2,9 @@ abstract class AbstractItem {
 	id: string;
 	name: string;
 	value: number;
-	stats: [string, number][];
+	stats: Array<[string, number]>;
 	
-	constructor(name: string, value: number, stats: [string, number][]) {
+	constructor(name: string, value: number, stats: Array<[string, number]>) {
 		this.name = name;
 		this.value = value;
 		this.stats = stats;
